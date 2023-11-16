@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:weightSum="100"
+    tools:context=".LoginPhoneNumberActivity">
+
+    <LinearLayout
+        android:layout_weight="20"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/my_primary"
+            android:background="@drawable/circular_bg"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_gray"
+            android:background="@drawable/circular_bg"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/light_gray"
+            android:background="@drawable/circular_bg"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+
+            <TextView
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="20"
+        android:tint="@color/my_primary"
+        android:src="@drawable/phone_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:ignore="UseAppTint">
+    </ImageView>
+    
+    <TextView
+        android:layout_weight="5"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:layout_gravity="center_vertical"
+        android:text="Enter mobile number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.hbb20.CountryCodePicker
+            app:ccp_defaultPhoneCode="84"
+            app:ccpDialog_showTitle="true"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccp_defaultLanguage="ENGLISH"
+            app:ccpDialog_background="@color/light_gray"
+            android:elevation="5dp"
+            android:id="@+id/login_countrycode"
+            app:ccp_showNameCode="false"
+            app:ccp_showFlag="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:id="@+id/login_mobile_number"
+            android:elevation="5dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/send_otp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="SEND OTP">
+
+        </Button>
+
+<!--        <ProgressBar-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/login_progress_bar"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:indeterminateTint="@color/my_primary"-->
+<!--            android:layout_width="32dp"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--        </ProgressBar>-->
+    </LinearLayout>
+
+</LinearLayout>

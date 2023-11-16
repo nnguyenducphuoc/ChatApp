@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "321146152975",
+    "project_id": "chatapp-7c3d3",
+    "storage_bucket": "chatapp-7c3d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321146152975:android:aeac9983818644a9131b7a",
+        "android_client_info": {
+          "package_name": "com.phuoc.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKo-Rl6tFs1OR_YJFzL0CWAwxnmzxWyCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
